@@ -1,0 +1,13 @@
+
+*{
+    background-color: orange;
+ } 
+
+ .order-menu{
+   color: orange;
+   text-decoration-color:red ;
+   background-color: rgb(220, 18, 18);
+   width: 500px;
+   height: 400px;
+   text-align: left;
+ }
