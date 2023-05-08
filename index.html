@@ -14,45 +14,43 @@
   
       <h1 class="orderButton">WELCOME TO KEFFACOFFFEE</h1>
       <div class="contianer">
-        <form action="">
-            
-                <input placeholder="Your Name Here" type="text">
-                <select name="coffee" id="coffeeType">
-                    <option value=""></option> 
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+        <form  class= "form" id = "form">
+          <label for="preferedName"></label>
+                <input required type="text" value = "" name=" preferedName" id = "preferedName" placeholder="Your Name Here">
+                <label for="coffeeType"></label>
+                <select name="coffeeType" id="coffeeType">
+                    <option value="Americanpo">Americanpo</option> 
+                    <option  value="Mocha Latte">Mocha Latte</option>
+                    <option  value="French Vanilla Cappuccino">French Vanilla Cappuccino</option>
+                    <option  value="Caramel Macchiato">Caramel Macchiato</option>
+                    <option  value="Premium Roast Coffee">Premium Roast Coffee</option>
+                    <option  value="Iced Caramel Coffee">Iced Caramel Coffee</option>
                 </select>
-                <select name="text" id="cup-size">
-                  <option value="2.99">large</option>
-                  <option value="1.99">medium</option>
-                  <option value="1.49">small</option>
-                </select>
+                <div>
+                  <label for="cup-size"></label>
+                <select name="size" id="cup-size">
+                  <option  value="large">large</option>
+                  <option   value="medium">medium</option>
+                  <option  value="small">small</option>
+                </select> </div>
+                
               </section>
                 </section>
-                <input placeholder="Quantity"  class="quantityForEach" type="text">
-                <button id ="addToCart" type="text">AddToCart</button>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                <!-- <button type="button" onclick="increment()">+</button>
+                <button type="button" onclick="decrement()">-</button>yh -->
+                <button id ="addToCart" type="submit"></button>
               -->I would love to have a cart displaying all info added to the cart including the total price<-->
                     <span>
-              <h1 class="orderdItem">cart</h1>
-
-              <div class="order_menu"> 
-                <button style="background-color: orange;">ORDER HERE</button>
-                <section class="cup-size">
-                 
-              </div>
+              
             </span>
-
-                
-
-
-
-
-
-
         </form>
+        <div class="order_menu"> 
+          <h1 class="orderdItem">cart</h1>
+          <button style="background-color: orange;">ORDER HERE</button>
+          <section class="cup-size">  
+        </div>
       </div>
   </body>
 </html>
