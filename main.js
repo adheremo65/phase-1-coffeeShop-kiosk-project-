@@ -17,17 +17,23 @@ function createCardElement(coffee) {
 const form = document.querySelector("#form")
 form.addEventListener("submit",(event)=>{
   event.preventDefault()
-  console.log(event)
-  const formAdded = Object.fromEntries(new FormData(event.target))
-  console.log(formAdded);
+  const custmerorder = Object.fromEntries(new FormData(event.target))
+  const order = document.querySelector(".orderdItem")
+  const h1Tag = document.createElement("h1")
+  h1Tag.classList.add('selectedCoffee')
+  h1Tag.innerText = custmerorder.coffeeType;
+  const quantity = document.createElement("h1")
+  quantity.innerText = `quantity: ${custmerorder.quantity}`;
+  const size = document.createElement("h1")
+  size.innerText = `${custmerorder.size}-size`;
+  order.append(h1Tag,size,quantity)})
 
-})
+const cartCollector = document.querySelector(".orderdItem")
+const ptag = document.createElement("p")
 
 
-// const submitedCart = document.querySelector("#addToCart");
-// submitedCart.addEventListener("submit",(e)=>{
-  
-// })
+
+
 
 
 function increment() {
@@ -50,20 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
   const button = document.querySelector(".order_menu");
   button.style.textAlign = "left";
-  //     card.addEventListener("click",()=>{
-  //      fetch("http://localhost:3000/ingridents",{
-  //    method: 'POST',
-  //    headers: {
-  //      'Content-Type': 'application/json'
-  //    },
-  //    body: JSON.stringify({
-  //      name: 'John Doe',
-  //      email: 'john.doe@example.com'
-  //    }),
-  //  })
-  //  .then(response => response.json())
-  //  .then(data => console.log(data))
-  //  .catch(error => console.error(error))
+  
 });
-
-// )})

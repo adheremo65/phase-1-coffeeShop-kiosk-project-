@@ -1,54 +1,53 @@
 {
-    "ingridents": [
-      {
-        "id": 1,
-        "name": "Americanpo",
-        "type": "classic",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1318_MediumAmericano_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
-        "description": "Americano is made with hot water poured over espresso. Available in large,medium and small size",
-        "ingrident": "plain Coffee Americano and Hot Water"
-      },
-      {
-        "id": 2,
-        "name": "Mocha Latte",
-        "type": "Light Cream",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_2731_MediumMocha_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
-        "description": "Made with espresso beans , steamed whole milk, chocolate syrup, and finished with whipped light cream and chocolate drizzle. Avialble in small,medium and large size",
-        "ingrident": "Whole Milk,Espresso,Chocolate Drizzle,Chocolate Syrup,Whipped Light Cream,Water"
-      },
-      {
-        "id": 3,
-        "name": "French Vanilla Cappuccino",
-        "type": "Flavored",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1372_MediumVanillaCappuccino_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
-        "description": "Made of whole steamed milk, bold espresso , fluffy foam, and rich French Vanilla flavor.Avialble in small,medium and large size ",
-        "ingrident": "Whole Milk,French Vanilla Syrup,Water,Espresso"
-      },
-      {
-        "id": 4,
-        "name": "Caramel Macchiato",
-        "type": "classic",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_2804_MediumCaramelMacchiato_Glass_A1_HL_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
-        "description": " Made of dark-roast espresso served with steamed whole milk, mixed with sweet caramel syrup. Available in small, medium, and large",
-        "Ingredients": "Whole Milk,Caramel Syrup,Water,Espresso,Caramel Drizzle"
-      },
-      {
-        "id": 5,
-        "name": "Premium Roast Coffee",
-        "type": "classic",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_0321_MediumCoffee_Glass_A1_HL_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
-        "description": " Made with 100% Arabica beans,Premium Roast Coffee is  roasted and freshly brewed every 30 minutes.  Hot coffee black or with your choice of sugar, sweetener, and dairy or creamer. Available in small, medium, and large.",
-        "ingrident": "Roasted Coffee and Water"
-      },
-      {
-        "id": 6,
-        "name": "Iced Caramel Coffee",
-        "type": "Light Cream",
-        "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1207_MediumIcedCaramelCoffee_Glass_A1_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
-        "description": "Premium Roast Coffee,Ice,Light Cream,Carmel Syrup",
-        "ingrident": "Made of premium roast beans and buttery caramel flavor. sweetener and creamer for a taste of your choise.Available in small, medium, and large sizes."
-      }
-      
-     
-    ]
-  }
+  "ingridents": [
+    {
+      "id": 1,
+      "name": "Americanpo",
+      "type": "classic",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1318_MediumAmericano_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+      "description": "Americano is made with hot water poured over espresso. Available in large,medium and small size",
+      "ingrident": "plain Coffee Americano and Hot Water"
+    },
+    {
+      "id": 2,
+      "name": "Mocha Latte",
+      "type": "Light Cream",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_2731_MediumMocha_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+      "description": "Made with espresso beans , steamed whole milk, chocolate syrup, and finished with whipped light cream and chocolate drizzle. Avialble in small,medium and large size",
+      "ingrident": "Whole Milk,Espresso,Chocolate Drizzle,Chocolate Syrup,Whipped Light Cream,Water"
+    },
+    {
+      "id": 3,
+      "name": "French Vanilla Cappuccino",
+      "type": "Flavored",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1372_MediumVanillaCappuccino_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+      "description": "Made of whole steamed milk, bold espresso , fluffy foam, and rich French Vanilla flavor.Avialble in small,medium and large size ",
+      "ingrident": "Whole Milk,French Vanilla Syrup,Water,Espresso"
+    },
+    {
+      "id": 4,
+      "name": "Caramel Macchiato",
+      "type": "classic",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_2804_MediumCaramelMacchiato_Glass_A1_HL_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
+      "description": " Made of dark-roast espresso served with steamed whole milk, mixed with sweet caramel syrup. Available in small, medium, and large",
+      "Ingredients": "Whole Milk,Caramel Syrup,Water,Espresso,Caramel Drizzle"
+    },
+    {
+      "id": 5,
+      "name": "Premium Roast Coffee",
+      "type": "classic",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_0321_MediumCoffee_Glass_A1_HL_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
+      "description": " Made with 100% Arabica beans,Premium Roast Coffee is  roasted and freshly brewed every 30 minutes.  Hot coffee black or with your choice of sugar, sweetener, and dairy or creamer. Available in small, medium, and large.",
+      "ingrident": "Roasted Coffee and Water"
+    },
+    {
+      "id": 6,
+      "name": "Iced Caramel Coffee",
+      "type": "Light Cream",
+      "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1207_MediumIcedCaramelCoffee_Glass_A1_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
+      "description": "Premium Roast Coffee,Ice,Light Cream,Carmel Syrup",
+      "ingrident": "Made of premium roast beans and buttery caramel flavor. sweetener and creamer for a taste of your choise.Available in small, medium, and large sizes."
+    }
+   
+  ]
+}

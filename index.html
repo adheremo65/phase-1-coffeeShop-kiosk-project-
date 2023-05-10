@@ -8,49 +8,52 @@
     <script src="main.js" defer></script>
     <title style="background-color: blue;">Keffa Coffeshop</title>
   </head>
+  <img  id="logo" src="logo of my project .png" alt=" KeffaCoffeeShop">
   <body>
 
     <header><strong> Keffa CoffeeShop</strong> </header>
-  
       <h1 class="orderButton">WELCOME TO KEFFACOFFFEE</h1>
       <div class="contianer">
         <form  class= "form" id = "form">
           <label for="preferedName"></label>
                 <input required type="text" value = "" name=" preferedName" id = "preferedName" placeholder="Your Name Here">
+                <div>
                 <label for="coffeeType"></label>
                 <select name="coffeeType" id="coffeeType">
                     <option value="Americanpo">Americanpo</option> 
-                    <option  value="Mocha Latte">Mocha Latte</option>
+                     <option  value="Mocha Latte">Mocha Latte</option>        
                     <option  value="French Vanilla Cappuccino">French Vanilla Cappuccino</option>
                     <option  value="Caramel Macchiato">Caramel Macchiato</option>
                     <option  value="Premium Roast Coffee">Premium Roast Coffee</option>
                     <option  value="Iced Caramel Coffee">Iced Caramel Coffee</option>
+                   </div>
                 </select>
+                <br>
                 <div>
                   <label for="cup-size"></label>
                 <select name="size" id="cup-size">
-                  <option  value="large">large</option>
+                  <option  value="'large">large</option>
                   <option   value="medium">medium</option>
                   <option  value="small">small</option>
-                </select> </div>
-                
-              </section>
-                </section>
-                <label for="quantity">Quantity:</label>
+                </select> 
+                </div>
+                <br>
+                <span>
+                <label for="quantity">Quantity</label>
                 <input type="number" id="quantity" name="quantity" value="1" min="1">
+                <br>
+                <input id ="addToCart" type="submit" ></button>
+              </span>
                 <!-- <button type="button" onclick="increment()">+</button>
-                <button type="button" onclick="decrement()">-</button>yh -->
-                <button id ="addToCart" type="submit"></button>
-              -->I would love to have a cart displaying all info added to the cart including the total price<-->
-                    <span>
-              
-            </span>
+                <button type="button" onclick="decrement()">-</button> -->
         </form>
         <div class="order_menu"> 
           <h1 class="orderdItem">cart</h1>
-          <button style="background-color: orange;">ORDER HERE</button>
-          <section class="cup-size">  
+          <button>Checkout</button>
+          <p>Total: $30.00</p>
+          <!-- <section class="cup-size">   -->
         </div>
       </div>
+      <button style="background-color: orange;">ORDER HERE</button>
   </body>
 </html>
