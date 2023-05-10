@@ -49,5 +49,23 @@
       "ingrident": "Made of premium roast beans and buttery caramel flavor. sweetener and creamer for a taste of your choise.Available in small, medium, and large sizes."
     }
    
+  ], "customers": [{
+    "listOforders": [
+      {
+        "firstName": "",
+        "order": [{ "coffeid": "", "quantity": "" }]
+      },
+  
+      {
+        "firstName": "",
+        "order": [
+          { "coffename": "", "quantity": "" },
+          { "coffename": "", "quantity": "" }
+        ]
+      }
+    ]
+  }
+  
+
   ]
 }

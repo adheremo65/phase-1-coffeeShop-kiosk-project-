@@ -13,23 +13,34 @@ function createCardElement(coffee) {
   const box = document.querySelector(".contianer");
   box.appendChild(card);
 }
-const form = document.querySelector("#form")
-form.addEventListener("submit",(event)=>{
-  event.preventDefault()
-  const custmerorder = Object.fromEntries(new FormData(event.target))
-  const order = document.querySelector(".orderdItem")
-  const h1Tag = document.createElement("h1")
-  h1Tag.classList.add('selectedCoffee')
+const form = document.querySelector("#form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const custmerorder = Object.fromEntries(new FormData(event.target));
+  const order = document.querySelector(".orderdItem");
+  const h1Tag = document.createElement("h1");
+  h1Tag.classList.add("selectedCoffee");
   h1Tag.innerText = custmerorder.coffeeType;
-  const quantity = document.createElement("h1")
+  const quantity = document.createElement("h1");
   quantity.innerText = `quantity: ${custmerorder.quantity}`;
-  const size = document.createElement("h1")
+  const size = document.createElement("h1");
   size.innerText = `${custmerorder.size}-size`;
-  order.append(h1Tag,size,quantity)})
+  if (size.innerText == "large-size") {
+    size.innerText = `${custmerorder.size}-size: 2.99`;
+  } else if  (size.innerText == "medium-size") {
+    size.innerText = `${custmerorder.size}-size: 1.99`}
+    else   
+      size.innerText = `${custmerorder.size}-size: 1.49`;
+    
+  order.append(h1Tag, size, quantity);
+});
+// function total(){
+//   const total = document.querySelector("#total")
+//   total.inner= if
+// }
 
-const cartCollector = document.querySelector(".orderdItem")
-const ptag = document.createElement("p")
-
+const cartCollector = document.querySelector(".orderdItem");
+const ptag = document.createElement("p");
 
 function increment() {
   var quantityField = document.getElementById("quantity");
@@ -49,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/ingridents")
     .then((res) => res.json())
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
-  const button = document.querySelector(".order_menu");
-  button.style.textAlign = "left";
-  
+  // const button = document.querySelector("cart");
+  // button.style.textAlign = "left";
 });
