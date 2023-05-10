@@ -13,7 +13,6 @@ function createCardElement(coffee) {
   const box = document.querySelector(".contianer");
   box.appendChild(card);
 }
-
 const form = document.querySelector("#form")
 form.addEventListener("submit",(event)=>{
   event.preventDefault()
@@ -30,10 +29,6 @@ form.addEventListener("submit",(event)=>{
 
 const cartCollector = document.querySelector(".orderdItem")
 const ptag = document.createElement("p")
-
-
-
-
 
 
 function increment() {
