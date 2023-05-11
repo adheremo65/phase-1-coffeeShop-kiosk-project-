@@ -18,12 +18,14 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const custmerorder = Object.fromEntries(new FormData(event.target));
   const order = document.querySelector(".orderdItem");
-  const h1Tag = document.createElement("h1");
-  h1Tag.classList.add("selectedCoffee");
-  h1Tag.innerText = custmerorder.coffeeType;
-  const quantity = document.createElement("h1");
+  const orderList = document.createElement("ul")
+  orderList.classList.add("orderdItem")
+  const l1Tag = document.createElement("li");
+  l1Tag.classList.add("selectedCoffee");
+  l1Tag.innerText = custmerorder.coffeeType;
+  const quantity = document.createElement("li");
   quantity.innerText = `quantity: ${custmerorder.quantity}`;
-  const size = document.createElement("h1");
+  const size = document.createElement("li");
   size.innerText = `${custmerorder.size}-size`;
   if (size.innerText == "large-size") {
     size.innerText = `${custmerorder.size}-size: 2.99`;
@@ -31,8 +33,9 @@ form.addEventListener("submit", (event) => {
     size.innerText = `${custmerorder.size}-size: 1.99`}
     else   
       size.innerText = `${custmerorder.size}-size: 1.49`;
-    
-  order.append(h1Tag, size, quantity);
+    console.log(order)
+    order.append(orderList)
+  orderList.append(l1Tag, size, quantity);
 });
 // function total(){
 //   const total = document.querySelector("#total")
