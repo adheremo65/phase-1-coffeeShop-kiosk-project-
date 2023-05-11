@@ -2,14 +2,14 @@
     "listOforders": [
       {
         "firstName": "lora",
-        "orders": [{ "coffeid": 1, "quantity": 3 }]
+        "order": [{ "coffeid": 1, "quantity": 3 }]
       },
   
       {
         "firstName": "Abdilkerim",
         "order": [
-          { "coffename": "macciato", "quantity": 3 },
-          { "coffename": "cappichno", "quantity": 1 }
+          { "coffeName": "macciato", "quantity": 3 },
+          { "coffeName": "cappichno", "quantity": 1 }
         ]
       }
     ]

@@ -17,6 +17,9 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const custmerorder = Object.fromEntries(new FormData(event.target));
+  const custumerName = document.createElement("h1")
+  custumerName.classList.add("custName")
+  custmerorder.innerText= custmerorder.name
   const order = document.querySelector(".orderdItem");
   const orderList = document.createElement("ul")
   orderList.classList.add("orderdItem")
@@ -36,11 +39,34 @@ form.addEventListener("submit", (event) => {
     console.log(order)
     order.append(orderList)
   orderList.append(l1Tag, size, quantity);
+  fetch('http://localhost:3000/ingridents',{
+    method: "POST",
+    headers: {
+      "Content-Type":"application/json"
+    },
+    body: 
+      [
+        {
+          "firstName": "lora",
+          "order": [{ "coffeid": 1, "quantity": 3 }]
+        },
+    
+        {
+          "firstName": "Abdilkerim",
+          "order": [
+            { "coffeName": "macciato", "quantity": 3 },
+            { "coffeName": "cappichno", "quantity": 1 }
+          ]
+        }
+      ]
+    
+  })
+  
+  
+  
+  
 });
-// function total(){
-//   const total = document.querySelector("#total")
-//   total.inner= if
-// }
+
 
 const cartCollector = document.querySelector(".orderdItem");
 const ptag = document.createElement("p");
