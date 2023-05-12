@@ -29,19 +29,17 @@ form.addEventListener("submit", (event) => {
   const quantity = document.createElement("li");
   quantity.innerText = `${custmerorder.quantity}`;
   const size = document.createElement("li");
-  size.innerText = `${custmerorder.size}-size`;
-  if (size.innerText == "large-size") {
-    size.innerText = `${custmerorder.size}`;
-  } else if (size.innerText == "medium-size") {
-    size.innerText = `${custmerorder.size}`;
-  } else size.innerText = `${custmerorder.size}`;
+  size.innerText = `${custmerorder.size}`;
+  // if (size.innerText == "large") {
+  //   size.innerText = `${custmerorder.size}`;
+  // } else if (size.innerText == "medium") {
+  //   size.innerText = `${custmerorder.size}`;
+  // } else size.innerText = `${custmerorder.size}`;
   const price = document.createElement("li");
-
   if (size.innerText == "large") {
     price.innerText = parseFloat(2.99 * quantity.innerText);
-
-  } else if ((size.innerText = "medium")) {
-    parseFloat(1.99 * quantity.innerText);
+  } else if (size.innerText = "medium") {
+    price.innerText = parseFloat(1.99 * quantity.innerText);
   } else price.innerText = parseFloat(1.49 * quantity.innerText);
   order.append(orderList);
   orderList.append(custName, l1Tag, size, quantity, price);
@@ -119,7 +117,7 @@ function decrement() {
 // const total = document.querySelector("#total")
 // total.innerText = for(i=0;i<)
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("http://localhost:3000/ingridents")
+  fetch("http://localhost:3000/coffeeDetials")
     .then((res) => res.json())
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
 });

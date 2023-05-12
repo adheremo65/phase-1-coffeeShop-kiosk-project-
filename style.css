@@ -30,3 +30,14 @@
   margin: 0;
   padding: 0;
  }
+
+
+ .cart {
+  width: 200px;
+  height: auto;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 10px;
+}

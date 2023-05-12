@@ -1,5 +1,5 @@
 {
-  "ingridents": [
+  "coffeeDetials": [
     {
       "id": 1,
       "name": "Americanpo",
@@ -124,6 +124,61 @@
         {
           "coffeeName": "Americanpo",
           "size": "large",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "firstName": "Tom",
+      "orders": [
+        {
+          "coffeeName": "Americanpo",
+          "size": "medium",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "firstName": "jemal",
+      "orders": [
+        {
+          "coffeeName": "Caramel Macchiato",
+          "size": "small",
+          "quantity": "4"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "firstName": "abdela",
+      "orders": [
+        {
+          "coffeeName": "Caramel Macchiato",
+          "size": "medium",
+          "quantity": "5"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "firstName": "abdela",
+      "orders": [
+        {
+          "coffeeName": "Caramel Macchiato",
+          "size": "medium",
+          "quantity": "5"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "firstName": "abdela",
+      "orders": [
+        {
+          "coffeeName": "Americanpo",
+          "size": "small",
           "quantity": "3"
         }
       ]
