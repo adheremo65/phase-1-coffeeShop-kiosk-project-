@@ -17,12 +17,14 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const custmerorder = Object.fromEntries(new FormData(event.target));
-  const custumerName = document.createElement("h1")
-  custumerName.classList.add("custName")
-  custmerorder.innerText= custmerorder.name
+  console.log(custmerorder)
   const order = document.querySelector(".orderdItem");
-  const orderList = document.createElement("ul")
-  orderList.classList.add("orderdItem")
+  const orderList = document.createElement("ul");
+  const custName = document.createElement("li")
+  custName.classList.add("custmerName")
+  custName.innerText = custmerorder[prefered];
+  console.log(custName); 
+  orderList.classList.add("orderdItem");
   const l1Tag = document.createElement("li");
   l1Tag.classList.add("selectedCoffee");
   l1Tag.innerText = custmerorder.coffeeType;
@@ -32,41 +34,28 @@ form.addEventListener("submit", (event) => {
   size.innerText = `${custmerorder.size}-size`;
   if (size.innerText == "large-size") {
     size.innerText = `${custmerorder.size}-size: 2.99`;
-  } else if  (size.innerText == "medium-size") {
-    size.innerText = `${custmerorder.size}-size: 1.99`}
-    else   
-      size.innerText = `${custmerorder.size}-size: 1.49`;
-    console.log(order)
-    order.append(orderList)
+  } else if (size.innerText == "medium-size") {
+    size.innerText = `${custmerorder.size}-size: 1.99`;
+  } else size.innerText = `${custmerorder.size}-size: 1.49`;
+  console.log(order);
+  order.append(orderList);
   orderList.append(l1Tag, size, quantity);
-  fetch('http://localhost:3000/ingridents',{
+  fetch("http://localhost:3000/listOrders", {
     method: "POST",
-    headers: {
-      "Content-Type":"application/json"
-    },
-    body: 
-      [
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      id: "",
+      firstName: `${custmerorder.name}`,
+      orders: [
         {
-          "firstName": "lora",
-          "order": [{ "coffeid": 1, "quantity": 3 }]
+          coffeeName: `${custmerorder.coffeeType}`,
+          size: `${custmerorder.size}`,
+          quantity: `${custmerorder.quantity}`,
         },
-    
-        {
-          "firstName": "Abdilkerim",
-          "order": [
-            { "coffeName": "macciato", "quantity": 3 },
-            { "coffeName": "cappichno", "quantity": 1 }
-          ]
-        }
-      ]
-    
-  })
-  
-  
-  
-  
+      ],
+    }),
+  });
 });
-
 
 const cartCollector = document.querySelector(".orderdItem");
 const ptag = document.createElement("p");
@@ -89,6 +78,4 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/ingridents")
     .then((res) => res.json())
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
-  // const button = document.querySelector("cart");
-  // button.style.textAlign = "left";
 });
