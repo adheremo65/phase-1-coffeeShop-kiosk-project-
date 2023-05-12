@@ -22,8 +22,7 @@ form.addEventListener("submit", (event) => {
   const orderList = document.createElement("ul");
   const custName = document.createElement("li");
   custName.classList.add("custmerName");
-  custName.innerText = custmerorder[preferedName];
-  console.log(custName);
+  custName.innerText = custmerorder.preferedName;
   orderList.classList.add("orderdItem");
   const l1Tag = document.createElement("li");
   l1Tag.classList.add("selectedCoffee");
@@ -39,13 +38,13 @@ form.addEventListener("submit", (event) => {
   } else size.innerText = `${custmerorder.size}-size: 1.49`;
   console.log(order);
   order.append(orderList);
-  orderList.append(l1Tag, size, quantity);
+  orderList.append(custName, l1Tag, size, quantity);
   fetch("http://localhost:3000/listOrders", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       id: "",
-      firstName: `${custmerorder.name}`,
+      firstName: `${custmerorder.preferedName}`,
       orders: [
         {
           coffeeName: `${custmerorder.coffeeType}`,
@@ -70,7 +69,8 @@ function decrement() {
     quantityField.value = currentQuantity - 1;
   }
 }
-
+// const total = document.querySelector("#total")
+// total.innerText = for(i=0;i<)
 document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/ingridents")
     .then((res) => res.json())
