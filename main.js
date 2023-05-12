@@ -38,69 +38,32 @@ form.addEventListener("submit", (event) => {
   const price = document.createElement("li");
   if (size.innerText == "large") {
     price.innerText = parseFloat(2.99 * quantity.innerText);
-  } else if (size.innerText = "medium") {
+  } else if ((size.innerText = "medium")) {
     price.innerText = parseFloat(1.99 * quantity.innerText);
   } else price.innerText = parseFloat(1.49 * quantity.innerText);
   order.append(orderList);
   orderList.append(custName, l1Tag, size, quantity, price);
 
-  const checkOut = document.querySelector(".finalOrder")
-    checkOut.addEventListener("click",(e)=>{
-      fetch("http://localhost:3000/listOrders", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          id: "",
-          firstName: `${custmerorder.preferedName}`,
-          orders: [
-            {
-              coffeeName: `${custmerorder.coffeeType}`,
-              size: `${custmerorder.size}`,
-              quantity: `${custmerorder.quantity}`,
-              
-            },
-          ],
-        }),
-      })
-  
-    })
-
-  
-  // fetch("http://localhost:3000/listOrders", {
-  //   method: "POST",
-  //   headers: { "Content-Type": "application/json" },
-  //   body: JSON.stringify({
-  //     id: "",
-  //     firstName: `${custmerorder.preferedName}`,
-  //     orders: [
-  //       {
-  //         coffeeName: `${custmerorder.coffeeType}`,
-  //         size: `${custmerorder.size}`,
-  //         quantity: `${custmerorder.quantity}`,
-  //       },
-  //     ],
-  //   }),
-  // });
+  const checkOut = document.querySelector(".finalOrder");
+  checkOut.addEventListener("click", (e) => {
+    fetch("http://localhost:3000/listOrders", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: "",
+        firstName: `${custmerorder.preferedName}`,
+        orders: [
+          {
+            coffeeName: `${custmerorder.coffeeType}`,
+            size: `${custmerorder.size}`,
+            quantity: `${custmerorder.quantity}`,
+          },
+        ],
+      }),
+    });
+  });
 });
-// const checkOut = document.querySelector(".finalOrder")
-//   checkOut.addEventListener("click",(e)=>{
-//     fetch("http://localhost:3000/listOrders", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify({
-//         id: "",
-//         firstName: `${custmerorder.preferedName}`,
-//         orders: [
-//           {
-//             coffeeName: `${custmerorder.coffeeType}`,
-//             size: `${custmerorder.size}`,
-//             quantity: `${custmerorder.quantity}`,
-//           },
-//         ],
-//       }),
-//     })
 
-//   })
 function increment() {
   var quantityField = document.getElementById("quantity");
   var currentQuantity = parseInt(quantityField.value);
