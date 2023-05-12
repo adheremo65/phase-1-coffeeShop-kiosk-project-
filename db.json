@@ -74,14 +74,15 @@
     },
     {
       "id": 3,
-      "firstName": "jemal",
+      "firstName": "abdela",
       "orders": [
         {
           "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
+          "size": "medium",
+          "quantity": "3"
         }
-      ]
+      ],
+      "total": ""
     },
     {
       "id": 4,
@@ -90,18 +91,18 @@
         {
           "coffeeName": "Americanpo",
           "size": "large",
-          "quantity": ""
+          "quantity": "4"
         }
       ]
     },
     {
       "id": 5,
-      "firstName": "abdela",
+      "firstName": "Tom",
       "orders": [
         {
           "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "5"
+          "size": "medium",
+          "quantity": "6"
         }
       ]
     },
@@ -110,9 +111,9 @@
       "firstName": "Tom",
       "orders": [
         {
-          "coffeeName": "Mocha Latte",
-          "size": "large",
-          "quantity": "1"
+          "coffeeName": "Americanpo",
+          "size": "medium",
+          "quantity": "4"
         }
       ]
     },
@@ -121,317 +122,9 @@
       "firstName": "Tom",
       "orders": [
         {
-          "coffeeName": "Mocha Latte",
-          "size": "large",
-          "quantity": ""
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Mocha Latte",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "French Vanilla Cappuccino",
-          "size": "medium",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "firstName": "abdela",
-      "orders": [
-        {
           "coffeeName": "Americanpo",
           "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "firstName": "Tom",
-      "orders": [
-        {
-          "coffeeName": "Caramel Macchiato",
-          "size": "large",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "firstName": "Tom",
-      "orders": [
-        {
-          "coffeeName": "Caramel Macchiato",
-          "size": "large",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "1.99",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Caramel Macchiato",
-          "size": "medium",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Mocha Latte",
-          "size": "medium",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Caramel Macchiato",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "firstName": "Tom",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "medium",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "medium",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "firstName": "jemal",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "1"
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "firstName": "abdela",
-      "orders": [
-        {
-          "coffeeName": "Americanpo",
-          "size": "large",
-          "quantity": "4"
+          "quantity": "3"
         }
       ]
     }
