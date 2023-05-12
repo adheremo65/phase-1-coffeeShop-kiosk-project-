@@ -17,7 +17,6 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const custmerorder = Object.fromEntries(new FormData(event.target));
-  console.log(custmerorder);
   const order = document.querySelector(".orderdItem");
   const orderList = document.createElement("ul");
   const custName = document.createElement("li");
@@ -29,6 +28,8 @@ form.addEventListener("submit", (event) => {
   l1Tag.innerText = custmerorder.coffeeType;
   const quantity = document.createElement("li");
   quantity.innerText = `quantity: ${custmerorder.quantity}`;
+  const price = document.createElement("li");
+  price.innerText = if
   const size = document.createElement("li");
   size.innerText = `${custmerorder.size}-size`;
   if (size.innerText == "large-size") {

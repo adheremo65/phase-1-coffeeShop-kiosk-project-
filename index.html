@@ -14,10 +14,11 @@
     <header><strong> Keffa CoffeeShop</strong> </header>
       <h1 class="orderButton">WELCOME TO KEFFACOFFFEE</h1>
       <div class="contianer">
+        <span>
         <form  class= "form" id = "form">
           <label for="preferedName"></label>
                 <input required type="text" value = "" name="preferedName"  placeholder="Your Name Here">
-                <div>
+                
                 <label for="coffeeType"></label>
                 <select name="coffeeType" id="coffeeType">
                     <option value="Americanpo">Americanpo</option> 
@@ -26,22 +27,24 @@
                     <option  value="Caramel Macchiato">Caramel Macchiato</option>
                     <option  value="Premium Roast Coffee">Premium Roast Coffee</option>
                     <option  value="Iced Caramel Coffee">Iced Caramel Coffee</option>
-                   </div>
+                  </span>
+                   
                 </select>
-                <br>
-                <div>
+                <br> <br>
+                <span>
                   <label for="cup-size"></label>
                 <select name="size" id="cup-size">
                   <option  value="large">large</option>
                   <option   value="medium">medium</option>
                   <option  value="small">small</option>
                 </select> 
-                </div>
-                <br>
-                <span>
+                
+            
+                
                 <label for="quantity">Quantity</label>
                 <input type="number" id="quantity" name="quantity" value="1" min="1">
-                <br>
+              </span>
+                <br><br>
                 <input id ="addToCart" type="submit" ></button>
               </span>
                 <!-- <button type="button" onclick="increment()">+</button>
