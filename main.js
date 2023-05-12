@@ -17,13 +17,13 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const custmerorder = Object.fromEntries(new FormData(event.target));
-  console.log(custmerorder)
+  console.log(custmerorder);
   const order = document.querySelector(".orderdItem");
   const orderList = document.createElement("ul");
-  const custName = document.createElement("li")
-  custName.classList.add("custmerName")
-  custName.innerText = custmerorder[prefered];
-  console.log(custName); 
+  const custName = document.createElement("li");
+  custName.classList.add("custmerName");
+  custName.innerText = custmerorder[preferedName];
+  console.log(custName);
   orderList.classList.add("orderdItem");
   const l1Tag = document.createElement("li");
   l1Tag.classList.add("selectedCoffee");
@@ -56,9 +56,6 @@ form.addEventListener("submit", (event) => {
     }),
   });
 });
-
-const cartCollector = document.querySelector(".orderdItem");
-const ptag = document.createElement("p");
 
 function increment() {
   var quantityField = document.getElementById("quantity");
