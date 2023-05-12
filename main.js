@@ -27,19 +27,26 @@ form.addEventListener("submit", (event) => {
   l1Tag.classList.add("selectedCoffee");
   l1Tag.innerText = custmerorder.coffeeType;
   const quantity = document.createElement("li");
-  quantity.innerText = `quantity: ${custmerorder.quantity}`;
-  const price = document.createElement("li");
-  price.innerText = if
+  quantity.innerText = `${custmerorder.quantity}`;
   const size = document.createElement("li");
   size.innerText = `${custmerorder.size}-size`;
   if (size.innerText == "large-size") {
-    size.innerText = `${custmerorder.size}-size: 2.99`;
+    size.innerText = `${custmerorder.size}`;
   } else if (size.innerText == "medium-size") {
-    size.innerText = `${custmerorder.size}-size: 1.99`;
-  } else size.innerText = `${custmerorder.size}-size: 1.49`;
-  console.log(order);
+    size.innerText = `${custmerorder.size}`;
+  } else size.innerText = `${custmerorder.size}`;
+  const price = document.createElement("li");
+  
+   if(size.innerText == "large"){
+    price.innerText =  parseFloat((2.99)*(quantity.innerText))
+    console.log(price.innerText)
+  } else if (size.innerText = "medium"){
+    parseFloat((1.99)*(quantity.innerText))
+  } else price.innerText = parseFloat((1.49)*(quantity.innerText))
+  
+  console.log(price.innerText);
   order.append(orderList);
-  orderList.append(custName, l1Tag, size, quantity);
+  orderList.append(custName, l1Tag, size, quantity,price);
   fetch("http://localhost:3000/listOrders", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
