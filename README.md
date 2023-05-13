@@ -15,6 +15,8 @@ The db.json will be used as an api for this project.
 The order form will be submited once the customer selects theier order.
 when the order got submited, order information like the prfered name will be displayed for the user .
 The customer should be able to see their selection and subtotoal price foreach selection before final check out. 
+After selection the customer should click the checkout button to send out the order 
+
 
 
 
