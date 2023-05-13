@@ -43,6 +43,17 @@ form.addEventListener("submit", (event) => {
   } else price.innerText = parseFloat(1.49 * quantity.innerText);
   order.append(orderList);
   orderList.append(custName, l1Tag, size, quantity, price);
+  // const totalCost = document.createElement("h1")
+  // totalCost.classList.add("totalCost")
+  // let total = 0
+  //  for (let index = 0; index < orderList.length; index++) {
+
+  // total = total + orderList.price;
+  // totalCost.innerText = total;
+  // order.append(totalCost)
+  // console.log(totalCost)
+
+  // }
 
   const checkOut = document.querySelector(".finalOrder");
   checkOut.addEventListener("click", (e) => {
@@ -61,6 +72,10 @@ form.addEventListener("submit", (event) => {
         ],
       }),
     });
+    const hItem = document.querySelector(".orderdItem");
+    while (hItem.firstChild) {
+      hItem.removeChild(hItem.firstChild);
+    }
   });
 });
 

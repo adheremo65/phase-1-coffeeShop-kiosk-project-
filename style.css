@@ -2,6 +2,42 @@
 *{
     background-color: orange;
  } 
+ #addToCart{
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+ }
+#addToCart:hover{
+  background-color: red;
+  color: white;
+  
+}
+ .cardinfo
+  /* {
+    display: flex;
+    justify-content: stretch;
+    align-items: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  */
+  .coffeeImage{
+    display: flex;
+    justify-content: stretch;
+    align-items: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:"";
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
+ 
 
  .order-menu{
    color: orange;
@@ -33,9 +69,10 @@
 
 
  .cart {
+  float: left;
   width: 200px;
   height: auto;
-  background-color: #f7f7f7;
+  background-color:yellowgreen ;
   border: 1px solid #ccc;
   margin: 20px auto;
   padding: 10px;
