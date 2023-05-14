@@ -60,6 +60,17 @@
           "quantity": 2
         }
       ]
+    },
+    {
+      "id": 2,
+      "firstName": "Tom",
+      "orders": [
+        {
+          "coffeeName": "Caramel Macchiato",
+          "size": "medium",
+          "quantity": "3"
+        }
+      ]
     }
   ]
 }

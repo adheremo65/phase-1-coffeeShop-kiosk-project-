@@ -1,7 +1,8 @@
 # phase-1-coffeeShop-kiosk-project-
 # keffa CoffeeShop Kiosk
                # Introduction
-    This project is intended to server as kiosk for a mini coffeeshop. it should able to display the avialable coffee types, associated size and price. 
+    This project is intended to serve as kiosk for a mini coffeeshop. it should able to display the avialable coffee types and their detials. 
+    The images are taken from the popular Mkdonalds menu.
             #This is how I come up with the project idea. 
 This project is inspired by the  love i have for coffee growing up. And this is the prefect opportunity to make a website for my friends coffeeshop called keffaa.
                      #This is how it works
@@ -16,6 +17,11 @@ The order form will be submited once the customer selects theier order.
 when the order got submited, order information like the prfered name will be displayed for the user .
 The customer should be able to see their selection and subtotoal price foreach selection before final check out. 
 After selection the customer should click the checkout button to send out the order 
+
+
+npm install, 
+json-server run
+
 
 
 

@@ -12,7 +12,15 @@ function createCardElement(coffee) {
   card.append(nameCoffee, imag, coffeeType);
   const box = document.querySelector(".contianer");
   box.appendChild(card);
-}
+  imag.addEventListener("click",()=>{
+    fetch(`http://localhost:3000/coffeeDetials/${coffee.id}`)
+    .then(res =>res.json())
+    .then(data =>(data))
+  })
+  
+ }
+ 
+
 const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -43,17 +51,6 @@ form.addEventListener("submit", (event) => {
   } else price.innerText = parseFloat(1.49 * quantity.innerText);
   order.append(orderList);
   orderList.append(custName, l1Tag, size, quantity, price);
-  // const totalCost = document.createElement("h1")
-  // totalCost.classList.add("totalCost")
-  // let total = 0
-  //  for (let index = 0; index < orderList.length; index++) {
-
-  // total = total + orderList.price;
-  // totalCost.innerText = total;
-  // order.append(totalCost)
-  // console.log(totalCost)
-
-  // }
 
   const checkOut = document.querySelector(".finalOrder");
   checkOut.addEventListener("click", (e) => {
@@ -92,10 +89,10 @@ function decrement() {
     quantityField.value = currentQuantity - 1;
   }
 }
-// const total = document.querySelector("#total")
-// total.innerText = for(i=0;i<)
 document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/coffeeDetials")
     .then((res) => res.json())
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
+
+ 
 });
