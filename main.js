@@ -9,13 +9,20 @@ function createCardElement(coffee) {
   imag.src = coffee.image;
   imag.classList.add("coffeeImage");
   coffeeType.classList.add("coffeeType");
+ 
   card.append(nameCoffee, imag, coffeeType);
   const box = document.querySelector(".contianer");
   box.appendChild(card);
   imag.addEventListener("click",()=>{
     fetch(`http://localhost:3000/coffeeDetials/${coffee.id}`)
     .then(res =>res.json())
-    .then(data =>(data))
+    .then(data =>{ 
+      const desc = document.createElement("li")
+      desc.classList.add("desc")
+      desc.innerText = data.description
+      card.append(desc)
+    })
+      
   })
   
  }
