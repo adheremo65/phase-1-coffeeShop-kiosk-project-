@@ -25,6 +25,7 @@ function createCardElement(coffee) {
       desc.classList.add("desc")
       desc.innerText = data.description
       desc.style.color = "green"
+      ingredient.style.color = "blue"
       card.append(ingredient,desc)
       
     })
