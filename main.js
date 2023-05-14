@@ -20,6 +20,7 @@ function createCardElement(coffee) {
       const desc = document.createElement("li")
       desc.classList.add("desc")
       desc.innerText = data.description
+      desc.style.color = "green"
       card.append(desc)
     })
       
