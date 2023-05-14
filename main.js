@@ -17,11 +17,16 @@ function createCardElement(coffee) {
     fetch(`http://localhost:3000/coffeeDetials/${coffee.id}`)
     .then(res =>res.json())
     .then(data =>{ 
+      const ingredient = document.createElement("li")
+      ingredient.classList.add("ingredient")
+      ingredient.innerText = data.ingredient
+
       const desc = document.createElement("li")
       desc.classList.add("desc")
       desc.innerText = data.description
       desc.style.color = "green"
-      card.append(desc)
+      card.append(ingredient,desc)
+      
     })
       
   })
