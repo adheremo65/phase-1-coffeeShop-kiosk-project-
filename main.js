@@ -8,6 +8,7 @@ function createCardElement(coffee) {
   const imag = document.createElement("img");
   imag.src = coffee.image;
   imag.classList.add("coffeeImage");
+  imag.style.color = "orange"
   coffeeType.classList.add("coffeeType");
  
   card.append(nameCoffee, imag, coffeeType);

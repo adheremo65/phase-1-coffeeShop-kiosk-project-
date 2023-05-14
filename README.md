@@ -24,4 +24,6 @@ when the image got clicked, it should provide more information about the specifi
 
 
 
+# MIT licence for github
 # finally, I would like to mention that all the coffee images are taken from the popular Mkdonalds menu for coffee. 
+

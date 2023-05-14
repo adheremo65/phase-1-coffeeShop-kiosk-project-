@@ -10,20 +10,6 @@
   color: white;
   
 }
- .cardinfo
-  /* {
-    display: flex;
-    justify-content: stretch;
-    align-items: left;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: blue;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  */
   .coffeeImage{
     display: flex;
     justify-content: stretch;
@@ -36,9 +22,9 @@
     background-color:"";
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
- 
- 
-
+.ingredient{
+  color: red;
+}
  .order-menu{
    color: orange;
    text-decoration-color:red ;
