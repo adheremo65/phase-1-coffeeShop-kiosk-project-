@@ -1,8 +1,8 @@
 {
-  "coffeeDetials": [
+  "coffeeDetails": [
     {
       "id": 1,
-      "name": "Americanpo",
+      "name": "Americano",
       "type": "classic",
       "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1318_MediumAmericano_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
       "description": "Americano is made with hot water poured over espresso. Available in large,medium and small size",
@@ -21,7 +21,7 @@
       "name": "French Vanilla Cappuccino",
       "type": "Flavored",
       "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1372_MediumVanillaCappuccino_Glass_A1_HL_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
-      "description": "Made of whole steamed milk, bold espresso , fluffy foam, and rich French Vanilla flavor.Avialble in small,medium and large size ",
+      "description": "Made of whole steamed milk, bold espresso , fluffy foam, and rich French Vanilla flavor.Available in small,medium and large size ",
       "ingredient": "Whole Milk,French Vanilla Syrup,Water,Espresso"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Premium Roast Coffee",
       "type": "classic",
       "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_0321_MediumCoffee_Glass_A1_HL_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
-      "description": " Made with 100% Arabica beans,Premium Roast Coffee is  roasted and freshly brewed every 30 minutes.  Hot coffee black or with your choice of sugar, sweetener, and dairy or creamer. Available in small, medium, and large.",
+      "description": " Made with 100% arabica beans,Premium Roast Coffee is  roasted and freshly brewed every 30 minutes.  Hot coffee black or with your choice of sugar, sweetener, and dairy or creamer. Available in small, medium, and large.",
       "ingredient": "Roasted Coffee and Water"
     },
     {
@@ -46,7 +46,7 @@
       "type": "Light Cream",
       "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1207_MediumIcedCaramelCoffee_Glass_A1_832x472:product-header-mobile?wid=768&hei=441&dpr=off",
       "description": "Premium Roast Coffee,Ice,Light Cream,Carmel Syrup",
-      "ingredient": "Made of premium roast beans and buttery caramel flavor. sweetener and creamer for a taste of your choise.Available in small, medium, and large sizes."
+      "ingredient": "Made of premium roast beans and buttery caramel flavor. sweetener and creamer for a taste of your choice.Available in small, medium, and large sizes."
     }
   ],
   "listOrders": [
@@ -112,6 +112,39 @@
         {
           "coffeeName": "French Vanilla Cappuccino",
           "size": "small",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "firstName": "Tom",
+      "orders": [
+        {
+          "coffeeName": "Americanpo",
+          "size": "large",
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "firstName": "Tom",
+      "orders": [
+        {
+          "coffeeName": "Americanpo",
+          "size": "large",
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "firstName": "abdela",
+      "orders": [
+        {
+          "coffeeName": "French Vanilla Cappuccino",
+          "size": "medium",
           "quantity": "3"
         }
       ]

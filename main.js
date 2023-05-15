@@ -1,6 +1,6 @@
 function createCardElement(coffee) {
   const card = document.createElement("div");
-  card.classList.add("cardinfo");
+  card.classList.add("cardInfo");
   const nameCoffee = document.createElement("h2");
   nameCoffee.innerText = coffee.name;
   const coffeeType = document.createElement("h2");
@@ -8,14 +8,12 @@ function createCardElement(coffee) {
   const imag = document.createElement("img");
   imag.src = coffee.image;
   imag.classList.add("coffeeImage");
-  imag.style.color = "orange"
   coffeeType.classList.add("coffeeType");
- 
   card.append(nameCoffee, imag, coffeeType);
-  const box = document.querySelector(".contianer");
+  const box = document.querySelector(".container");
   box.appendChild(card);
   imag.addEventListener("click",()=>{
-    fetch(`http://localhost:3000/coffeeDetials/${coffee.id}`)
+    fetch(`http://localhost:3000/coffeeDetails/${coffee.id}`)
     .then(res =>res.json())
     .then(data =>{ 
       const ingredient = document.createElement("li")
@@ -39,20 +37,20 @@ function createCardElement(coffee) {
 const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const custmerorder = Object.fromEntries(new FormData(event.target));
-  const order = document.querySelector(".orderdItem");
+  const customerOrder = Object.fromEntries(new FormData(event.target));
+  const order = document.querySelector(".orderedItem");
   const orderList = document.createElement("ul");
   const custName = document.createElement("li");
   custName.classList.add("custmerName");
-  custName.innerText = custmerorder.preferedName;
-  orderList.classList.add("orderdItem");
+  custName.innerText = customerOrder.preferedName;
+  orderList.classList.add("orderedItem");
   const l1Tag = document.createElement("li");
   l1Tag.classList.add("selectedCoffee");
-  l1Tag.innerText = custmerorder.coffeeType;
+  l1Tag.innerText = customerOrder.coffeeType;
   const quantity = document.createElement("li");
-  quantity.innerText = `${custmerorder.quantity}`;
+  quantity.innerText = `${customerOrder.quantity}`;
   const size = document.createElement("li");
-  size.innerText = `${custmerorder.size}`;
+  size.innerText = `${customerOrder.size}`;
  
   const price = document.createElement("li");
   if (size.innerText == "large") {
@@ -70,17 +68,17 @@ form.addEventListener("submit", (event) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         id: "",
-        firstName: `${custmerorder.preferedName}`,
+        firstName: `${customerOrder.preferedName}`,
         orders: [
           {
-            coffeeName: `${custmerorder.coffeeType}`,
-            size: `${custmerorder.size}`,
-            quantity: `${custmerorder.quantity}`,
+            coffeeName: `${customerOrder.coffeeType}`,
+            size: `${customerOrder.size}`,
+            quantity: `${customerOrder.quantity}`,
           },
         ],
       }),
     });
-    const hItem = document.querySelector(".orderdItem");
+    const hItem = document.querySelector(".orderedItem");
     while (hItem.firstChild) {
       hItem.removeChild(hItem.firstChild);
     }
@@ -101,7 +99,7 @@ function decrement() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("http://localhost:3000/coffeeDetials")
+  fetch("http://localhost:3000/coffeeDetails")
     .then((res) => res.json())
     .then((coffees) => coffees.forEach((coffee) => createCardElement(coffee)));
 
