@@ -16,7 +16,7 @@ The image cards will be clickable.
 when the image got clicked, it should provide more information about the specific coffee.
 
 #              This is how it works
-        To use the app or order a coffee:
+        To use the app to order a coffee:
         1. There is a form at the top. you put your prefered name, select coffee type, size and quantity
         2. submit your selection
         3. when you submit, the app should display your selection and partial total cost
